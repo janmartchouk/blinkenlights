@@ -11,9 +11,22 @@ html {
 
 #heading {
   bottom: 20px;
+  -webkit-animation: type-effect 1s;
+          animation: type-effect 1s;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
+  padding-right: 5px;
+}
+
+@media (min-width: 1024px) {
+  #heading {
+    font-size: 4rem;
+  }
+}
+
+#subheading {
   -webkit-animation: type-effect 1s infinite;
           animation: type-effect 1s infinite;
-  padding-right: 5px;
 }
 
 @-webkit-keyframes type-effect {
