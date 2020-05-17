@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-image: url("./img/bgdark.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#heading {
+  bottom: 20px;
+  -webkit-animation: type-effect 1s infinite;
+          animation: type-effect 1s infinite;
+  padding-right: 5px;
+  height: 32px;
+}
+
+@-webkit-keyframes type-effect {
+  0% {
+    border-right: 4px solid transparent;
+  }
+  49% {
+    border-right: 4px solid transparent;
+  }
+  50% {
+    border-right: 4px solid white;
+  }
+  100% {
+    border-right: 4px solid white;
+  }
+}
+
+@keyframes type-effect {
+  0% {
+    border-right: 4px solid transparent;
+  }
+  49% {
+    border-right: 4px solid transparent;
+  }
+  50% {
+    border-right: 4px solid white;
+  }
+  100% {
+    border-right: 4px solid white;
+  }
+}
+/*# sourceMappingURL=style.css.map */

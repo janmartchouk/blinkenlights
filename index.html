@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.2.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header flex flex-col items-center justify-center box-border h-screen">
+        <strong class="font-normal text-white box-border font-mono text-3xl relative" id="heading"></strong>
+        <a href="#body" class="absolute bottom-0"><span class="font-normal text-6xl box-border text-white  mdi mdi-chevron-down"></span></a>
+    </section>
+    <section id=body class="body flex flex-col lg:flex-col lg:justify-center items-center">
+        <div class="shadow-xl bg-white lg:w-6/12 m-6 my-12 lg:my-24 about-card border border-gray-400 rounded-md grid grid-flow-row lg:grid-cols-2">
+            <img src="img/trading.jpg" class="rounded-md rounded-b-none lg:rounded-b lg:row-span-2 lg:h-full object-cover" alt="">
+            <strong class="m-6 mb-1 text-3xl font-mono lg:col-start-2">What we do</strong>
+            <p class="m-6 mt-0 text-xl font-normal lg:col-start-2">Similique nisi rem accusantium esse quisquam facilis praesentium. Est veniam nam quidem unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus inventore soluta sit mollitia illum pariatur quasi placeat voluptate? Libero, excepturi. Suscipit vitae maiores minus numquam, porro officia nihil qui! Quia!</p>
+        </div>
+        <div class="shadow-xl bg-white lg:w-6/12 m-6 mb-12 lg:mb-24 about-card border border-gray-400 rounded-md grid grid-flow-row lg:grid-cols-2">
+            <img src="img/man.jpg" class="rounded-md rounded-b-none lg:rounded-b lg:row-span-2 lg:h-full object-cover" alt="">
+            <strong class="m-6 mb-1 text-3xl font-mono lg:col-start-2">Who we are</strong>
+            <p class="m-6 mt-0 text-xl font-normal lg:col-start-2">Similique nisi rem accusantium esse quisquam facilis praesentium. Est veniam nam quidem unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus inventore soluta sit mollitia illum pariatur quasi placeat voluptate? Libero, excepturi. Suscipit vitae maiores minus numquam, porro officia nihil qui! Quia!</p>
+        </div>
+    </section>
+    <footer id="footer" class="footer bg-gray-900 p-6 lg:p-12 flex justify-between">
+        <ul class="flex flex-col justify-around">
+            <a href=""><li class="text-white font-mono text-xl">Twitter</li></a>
+            <a href=""><li class="text-white font-mono text-xl">Facebook</li></a>
+            <a href=""><li class="text-white font-mono text-xl">Linkedin</li></a>
+            <a href=""><li class="text-white font-mono text-xl">Youtube</li></a>
+            <a href=""><li class="text-white font-mono text-xl">andrei@martchouk.com</li></a>
+        </ul>
+    </footer>
+      <script>
+          var i = 0;
+            var txt = 'blinkenlights';
+            var speed = 200;
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("heading").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+
+            typeWriter();
+      </script>
+</body>
+</html>
