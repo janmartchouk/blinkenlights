@@ -6,6 +6,7 @@ html {
   background-image: url("./img/bgdark.png");
   background-size: cover;
   background-position: center;
+  background-color: black;
 }
 
 #heading {
@@ -13,7 +14,6 @@ html {
   -webkit-animation: type-effect 1s infinite;
           animation: type-effect 1s infinite;
   padding-right: 5px;
-  height: 32px;
 }
 
 @-webkit-keyframes type-effect {
