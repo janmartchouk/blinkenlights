@@ -2,6 +2,17 @@ html
     scroll-behavior: smooth
 
 #body
-    background-image: url('img/bg.png')
+    background-color: none
     background-repeat: none
     background-size: cover
+    position: relative
+    z-index: 2
+
+    & > *
+        z-index: 2
+
+canvas
+    z-index: 1 !important
+    position: absolute
+    top: 0
+    left: 0
