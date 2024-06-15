@@ -1,0 +1,138 @@
+@import url('https://martcho.uk/lib/martcho.uk.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+header {
+	width: 100vw;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	h1 {
+		font-size: 6rem !important;
+		text-decoration: underline;
+	}
+	.ctas {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2rem;
+		a {
+			padding: 1rem 2rem;
+			font-size: 2rem;
+			margin: 0 1rem;
+			border: 2px solid black;
+			border-radius: 5px;
+			cursor: pointer;
+			text-decoration: none;
+			&:hover {
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+
+}
+
+nav {
+	padding: 1rem 2rem;
+	ul {
+		display: flex;
+		justify-content: end; 
+		align-items: center;
+		li {
+			margin: 0 1rem;
+			a {
+				text-decoration: none;
+				font-size: 2rem;
+				&:hover {
+					text-decoration: underline;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+section {
+	padding: 10rem 4rem;
+	width: calc(100vw - 8rem);
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.title {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
+	.section-contents {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		@media (max-width: 1024px) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+		}
+		grid-gap: 6rem;
+		.item {
+			padding: 2rem 1rem;
+			border: 2px solid black;
+			border-radius: 5px;
+			text-align: center;
+			display: flex;
+			transition: .2s ease-in-out;
+			&:hover {
+				box-shadow: 1rem 1rem 0 rgba(0,0,0);
+			}
+			flex-direction: column;
+			h3 {
+				font-size: 3rem;
+				padding-bottom: 1rem;
+				justify-self: start;
+			}
+			p {
+				font-size: 2rem;
+				margin: auto;
+			}
+		}
+	}
+	.section-details {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	details {
+		margin: 1rem 8rem;
+		transition: .2s ease-in-out;
+		&:hover {
+			box-shadow: 1rem 1rem 0 rgba(0,0,0);
+		}
+		summary {
+			width: 100%;
+			cursor: pointer;
+			padding: 1rem 2rem;
+		}
+		width: calc(100% - 16rem);
+		border: 2px solid black;
+		border-radius: 5px;
+		p {
+			padding: 1rem 2rem 2.5rem;
+			font-size: 2rem;
+		}
+	}
+}
+
+
