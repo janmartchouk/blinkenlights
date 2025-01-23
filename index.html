@@ -22,6 +22,7 @@
 			<a class='cta c-black' href='#services'>Services</a>
 			<a class='cta c-black' href='#technologies'>Technologien</a>
 		</div>
+		<a href="#services" id="chevron">❯</a>
 	</header>
 	<section id="services">
 		<h2 class='title c-black'>Services</h2>
@@ -129,4 +130,16 @@ Mit uns können Sie reale Vermögenswerte in digitale Tokens umzuwandeln, die au
     <p class='c-black'>
     NFTs (Non-Fungible Tokens) sind einzigartige digitale Vermögenswerte, die auf der Blockchain-Technologie basieren und eine neue Ära der digitalen Kreativität und des Eigentums eingeleitet haben. Sie ermöglichen es Künstlern, Designern und Kreativen, ihre Werke auf eine Weise zu tokenisieren, die Authentizität, Seltenheit und Eigentumsrechte garantiert. NFTs sind einzigartig, nicht austauschbar und können nicht wie herkömmliche Kryptowährungen wie Bitcoin oder Ethereum 1:1 gehandelt werden, da jeder Token individuelle Merkmale besitzt.
 		</div>
+		<script>
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+		</script>
+	</section>
 </body>

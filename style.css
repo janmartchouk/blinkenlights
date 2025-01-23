@@ -247,4 +247,23 @@ section {
 	}
 }
 
+header {
+	position: relative;
+}
 
+#chevron {
+	position: absolute;
+	bottom: 3rem;
+	font-size: 4rem;
+	color: white;
+	transform: rotate(90deg);
+	text-decoration: none;
+	transition: .2s ease-in-out;
+	&:hover, &:focus, &:visited {
+		color: white;
+		text-decoration: none;
+	}
+	&:hover {
+		font-size: 4.2rem;
+	}
+}
