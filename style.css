@@ -310,3 +310,19 @@ section.cta {
 .cta-last {
 	margin-bottom: 10rem;
 }
+
+.back-home {
+	margin: 1rem 0 2rem 0;
+	display: inline-block;
+	width: max-content;
+	border-radius: 5px;
+	text-decoration: none;
+	&:visited {
+		color: var(--white);
+	}
+	&:hover {
+		background-color: var(--black);
+		color: var(--white);
+	}
+	padding: 1.5rem 2.5rem;
+}
