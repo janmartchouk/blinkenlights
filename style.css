@@ -268,3 +268,45 @@ header {
 	}
 }
 
+section.cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10rem 4rem;
+	width: calc(100vw - 8rem);
+	border-radius: 5px;
+	@media (max-width: 768px) {
+		padding: 10rem 2rem;
+	}
+	.title {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+		max-width: 70%;
+	}
+	.center {
+		text-align: center;
+	}
+	p {
+		font-size: 2rem;
+		max-width: 60%;
+	}
+		a {
+			padding: 1rem 2rem;
+			font-size: 2rem;
+			background: var(--white);
+			color: var(--black);
+			margin: 4rem 1rem 0 0;
+			border-radius: 5px;
+			cursor: pointer;
+			text-decoration: none;
+			&:hover {
+				background-color: var(--black);
+				color: white;
+			}
+		}
+}
+
+.cta-last {
+	margin-bottom: 10rem;
+}
