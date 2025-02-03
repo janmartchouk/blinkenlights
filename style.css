@@ -33,10 +33,10 @@ header {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to top, rgba(0,0,0,0.4) 80%, black), url('bg.jpg');
+		background: linear-gradient(to top, rgba(0,0,0,0.7) 80%, black), url('bg.jpg');
 		background-size: cover;
 		background-position: center;
-		filter: brightness(1.5) saturate(8) contrast(.8);
+		filter: brightness(1.5) saturate(4) contrast(.8);
 	}
 	h1 {
 		font-size: 6rem !important;
