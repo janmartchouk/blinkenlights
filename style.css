@@ -12,65 +12,19 @@ html {
 	}
 }
 
-header {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-position: center;
-	position: relative;
-	z-index: 1;
-	@media(max-width: 768px) {
-		height: 102vh;
-	}
-	&::before {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(to top, rgba(0,0,0,0.7) 80%, black), url('bg.jpg');
-		background-size: cover;
-		background-position: center;
-		filter: brightness(1.5) saturate(4) contrast(.8);
-	}
-	h1 {
-		font-size: 6rem !important;
-	}
-	.ctas {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 2rem;
-		a {
-			padding: 1rem 2rem;
-			font-size: 2rem;
-			background: var(--white);
-			color: var(--black);
-			margin: 0 1rem;
-			border-radius: 5px;
-			cursor: pointer;
-			text-decoration: none;
-			&:hover {
-				background-color: var(--blue);
-				color: white;
-			}
-		}
-	}
-
+section {
+	transition: .2s ease-in-out;
 }
+
+
 
 #nav-details {
 	&::after {
 		content: '';
 		background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
 		cursor: pointer;
-		background-size: contain;
-		filter: invert(1);
+		background-size: cover;
+		transform: scaleY(1.2);
 		width: 3rem;
 		height: 3rem;
 		position: absolute;
@@ -244,6 +198,13 @@ section {
 	box-shadow: 1rem 1rem 0 var(--blue) !important;
 	@media (max-width: 768px) {
 		box-shadow: 0 1rem 0 var(--blue) !important;
+	}
+}
+
+.b-black:hover {
+	box-shadow: 1rem 1rem 0 var(--black) !important;
+	@media (max-width: 768px) {
+		box-shadow: 0 1rem 0 var(--black) !important;
 	}
 }
 
