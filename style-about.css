@@ -13,3 +13,58 @@
 	top: 0;
 	left: 0;:
 }
+
+nav, details {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+hr {
+	width: 20rem;
+}
+
+#about {
+	section {
+		margin: 3rem auto;
+		max-width: 800px;
+		padding: 1.5rem;
+		div {
+			width: 70rem;
+			height: 40rem;
+			margin-top: 20rem;
+			background-color: #f2f2f2;
+			content: "";
+			display: block;
+			margin-bottom: 5rem;
+		}
+		h1 {
+			font-size: 3.5rem;
+			text-align: left;
+			display: block;
+			width: 100%;
+			margin: 1rem 0;
+		}
+		p {
+			font-size: 2rem;
+			text-align: left;
+		}
+		ul ~ p {
+			left: -2rem !important;
+			position: relative !important;
+		}
+	}
+	section.cta {
+		max-width: 1200px;
+		padding: 7rem 1.5rem;
+		margin: 10rem auto;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			font-size: 2rem;
+			margin: 1rem 0;
+		}
+	}
+}
