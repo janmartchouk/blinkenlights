@@ -161,7 +161,13 @@ section {
 			cursor: pointer;
 			padding: 1rem 2rem;
 		}
-		width: calc(100% - 16rem);
+		width: calc(100% -16rem);
+		@media (max-width: 768px) {
+			width: 100%;
+			summary {
+				width: 90%;
+			}
+		}
 		border: 2px solid black;
 		border-radius: 5px;
 		&:hover {
