@@ -52,7 +52,18 @@ header {
 }
 
 #nav-details {
+	z-index: 200;
+	top: 1.9rem;
+	right: 2rem;
+	position: fixed;
 	&::after {
+		z-index: 200;
 		filter: invert(1);
 	}
+	summary {
+		z-index: 200;
+	}
 }
+
+
+

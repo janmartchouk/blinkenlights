@@ -19,7 +19,9 @@ section {
 
 
 #nav-details {
+	z-index: 200;
 	&::after {
+		z-index: 200;
 		content: '';
 		background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
 		cursor: pointer;
@@ -28,8 +30,8 @@ section {
 		width: 3rem;
 		height: 3rem;
 		position: absolute;
-		top: 1rem;
-		right: 1rem;
+		top: 0;
+		right: 0;
 		z-index: 200;
 		pointer-events: none;
 	}
@@ -39,7 +41,7 @@ section {
 		font-size: 3rem;
 	}
 	position: absolute;
-	z-index: 100;
+	z-index: 200;
 	right: 0;
 	@media (max-width: 768px) {
 		transform: scale(1.4);
@@ -62,7 +64,7 @@ section {
 }
 
 nav {
-	padding: 1rem 2rem;
+	padding: 2rem 2rem;
 	position: absolute;
 	top: 4rem;
 	right: 0;
@@ -292,4 +294,38 @@ section.cta {
 		color: var(--white);
 	}
 	padding: 1.5rem 2.5rem;
+}
+
+.bar-top {
+	z-index: 100;
+	padding: 2rem 1.5rem;
+	* {
+		font-size: 2rem;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		animation: blink 5s infinite;
+	}
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	color: white;
+}
+
+@keyframes blink {
+	0% {   color:white; }
+	15% {  color:white; }
+	16% {  color: #aaa; }
+	17% {  color:white; }
+	64% {  color:white; }
+	65% {  color: #aaa; }
+	66% {  color:white; }
+	73% {  color:white; }
+	74% {  color: #aaa; }
+	75% {  color:white; }
+	100% { color:white; }
 }
