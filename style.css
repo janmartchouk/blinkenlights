@@ -31,27 +31,25 @@ section {
 		height: 3rem;
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 2rem;
 		z-index: 200;
 		pointer-events: none;
 	}
 	cursor: pointer;
 	summary {
-		color: var(--white);
 		font-size: 3rem;
+		right: 2rem;
+		position: absolute;
 	}
-	position: absolute;
+	position: fixed;
 	z-index: 200;
 	right: 0;
-	@media (max-width: 768px) {
-		transform: scale(1.4);
-	}
 }
 
 #nav-details summary::marker {
 	width: 5rem !important;
 	position: absolute;
-	right: 0;
+	right: 2rem;
 	top: 0;
 	content: "     ";
 	z-index: 200;
@@ -64,7 +62,6 @@ section {
 }
 
 nav {
-	padding: 2rem 2rem;
 	position: absolute;
 	top: 4rem;
 	right: 0;
@@ -73,24 +70,42 @@ nav {
 		padding: 1rem 0 1rem;
 	}
 	ul {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr;
 		justify-content: start;
 		align-items: end;
-		flex-direction: column;
-		padding: 0;
+		background: var(--blue);
+		padding: 0 2rem;
+		width: max-content;
 		list-style-type: none;
+		top: -.5rem;
+		@media (max-width: 768px) {
+			top: -1.3rem;
+		}
+		position: relative;
 		li {
-			margin: 0 0 1rem 0;
+			width: 100%;
+			margin: 0;
 			@media(max-width: 768px) {
-				margin: 0 2rem;
 			}
 			a {
-				color: var(--white);
+				color: var(--white) !important;
+				background-color: var(--blue);
+				text-align: right;
 				text-decoration: none;
 				font-size: 2rem;
+				width: 100% !important;
+				position: relative;
+				display: inline-block;
+				margin: 0 !important;
+				padding-bottom: 1rem;
 				&:hover {
 					text-decoration: underline;
 					cursor: pointer;
+				}
+				@media (max-width: 768px) {
+					font-size: 2.5rem !important;
+					padding-top: 1rem;
 				}
 			}
 		}
