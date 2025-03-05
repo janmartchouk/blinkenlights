@@ -4,6 +4,9 @@ hr {
 
 .about-img {
 	width: 90vw !important;
+	height: 50rem;
+	object-fit: cover;
+	margin: 10rem 0 ;
 }
 
 #about {
