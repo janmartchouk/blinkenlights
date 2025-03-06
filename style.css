@@ -18,55 +18,30 @@ section {
 
 
 
-#nav-details {
+#nav-btn {
 	z-index: 200;
-	&::after {
-		z-index: 200;
-		content: '';
-		background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
-		cursor: pointer;
-		background-size: cover;
-		transform: scaleY(1.2);
-		width: 3rem;
-		height: 3rem;
-		position: absolute;
-		top: 0;
-		right: 2rem;
-		z-index: 200;
-		pointer-events: none;
-	}
+/*		background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");*/
 	cursor: pointer;
-	summary {
-		font-size: 3rem;
-		right: 2rem;
-		position: absolute;
-	}
+	background-size: cover;
 	position: fixed;
-	z-index: 200;
-	right: 0;
-}
-
-#nav-details summary::marker {
-	width: 5rem !important;
-	position: absolute;
+	top: .5rem;
 	right: 2rem;
-	top: 0;
-	content: "     ";
-	z-index: 200;
-	cursor: pointer;
-	height: 5rem !important;
-}
-
-#nav-details summary::-webkit-details-marker {
-	opacity: 0;
+	font-size: 4rem;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 nav {
+	&.display-none {
+		display: none;
+	}
 	position: absolute;
-	top: 4rem;
+	background: black !important;
+	top: 5rem;
 	right: 0;
 	z-index: 5;
-	mix-blend-mode: screen;
+	padding: 1rem 2rem 0 0;
+	position: fixed;
 	@media (max-width: 768px) {
 		padding: 1rem 0 1rem;
 	}
@@ -75,12 +50,8 @@ nav {
 		grid-template-columns: 1fr;
 		justify-content: start;
 		align-items: end;
-		background: black;
-		mix-blend-mode: screen;
-		padding: 1rem 2rem 0;
 		width: max-content;
 		list-style-type: none;
-		top: -.5rem;
 		@media (max-width: 768px) {
 			top: -1.3rem;
 		}

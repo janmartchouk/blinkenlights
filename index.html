@@ -7,9 +7,8 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 <body>
-	<details id=nav-details>
-		<summary></summary>
-	<nav>
+	<span id="nav-btn" class="c-white">☰</span>
+	<nav class="display-none">
 		<ul>
 			<li><a class='subtitle ' href='#services'>Services</a></li>
 			<li><a class='subtitle ' href='#technologies'>Technologien</a></li>
@@ -17,7 +16,6 @@
 			<li><a class='subtitle ' href='about.html'>Wer wir sind</a></li>
 		</ul>
 	</nav>
-	</details>
 	<div class="bar-top black">
 		<h1><a class='title' href="index.html">blinkenlights</a></h1>
 	</div>
@@ -180,4 +178,8 @@
         });
     });
 });
+
+			document.getElementById('nav-btn').addEventListener('click', function() {
+				document.querySelector('nav').classList.toggle('display-none');
+			});
 		</script>
