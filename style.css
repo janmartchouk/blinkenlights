@@ -40,11 +40,8 @@ nav {
 	top: 5rem;
 	right: 0;
 	z-index: 5;
-	padding: 1rem 2rem 0 0;
+	padding: 1rem 2.2rem 0 0;
 	position: fixed;
-	@media (max-width: 768px) {
-		padding: 1rem 0 1rem;
-	}
 	ul {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -52,9 +49,6 @@ nav {
 		align-items: end;
 		width: max-content;
 		list-style-type: none;
-		@media (max-width: 768px) {
-			top: -1.3rem;
-		}
 		position: relative;
 		li {
 			width: 100%;
